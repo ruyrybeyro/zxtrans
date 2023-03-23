@@ -75,3 +75,16 @@ Hints, tips, and troubleshooting:
 - If you cannot transfer any bytes at all, there may be an issue with your serial cable. Please note that the schematic for the cable presented in the "Sinclair Microdrive and Interface 1" manual is not standard -- the TX port is the input port and the RX port is the output port.
 
 - If you have any questions, comments, or encounter problems, feel free to get in touch - markgbeckett@gmail.com.
+
+For compiling it for Ubuntu or Debian, for running it in Debian do:
+
+sudo apt install libspectrum-dev
+
+sudo apt install libserialport-dev
+
+sudo apt install z80asm
+
+cd src
+
+make -f Makefile.linux
+
